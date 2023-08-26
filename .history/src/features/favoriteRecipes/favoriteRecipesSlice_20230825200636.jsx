@@ -6,7 +6,7 @@ const options = {
     initialState: [],
     reducers: {
         addRecipe: (state, action) => {
-            state.push(action.payload);
+            return [...state, action.payload];
         },
         removeRecipe: (state, action) => {
             return state.filter(recipe => recipe.id !== action.payload.id);
@@ -26,16 +26,3 @@ export const selectFilteredFavoriteRecipes = (state) => {
     recipe.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 };
-
-console.log(favoriteRecipesSlice.name);
-
-console.group("favoriteRecipesSlice.actions");
-for(let action in favoriteRecipesSlice.actions) {
-    console.log(action);
-}
-console.groupEnd();
-
-console.log(favoriteRecipesSlice);
-
-export const { addRecipe, removeRecipe } = favoriteRecipesSlice.actions;
-export default favoriteRecipesSlice.reducer;

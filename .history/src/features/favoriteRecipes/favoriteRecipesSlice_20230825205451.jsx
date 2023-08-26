@@ -28,14 +28,3 @@ export const selectFilteredFavoriteRecipes = (state) => {
 };
 
 console.log(favoriteRecipesSlice.name);
-
-console.group("favoriteRecipesSlice.actions");
-for(let action in favoriteRecipesSlice.actions) {
-    console.log(action);
-}
-console.groupEnd();
-
-console.log(favoriteRecipesSlice);
-
-export const { addRecipe, removeRecipe } = favoriteRecipesSlice.actions;
-export default favoriteRecipesSlice.reducer;

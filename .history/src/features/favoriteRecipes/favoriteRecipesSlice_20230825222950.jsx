@@ -38,4 +38,3 @@ console.groupEnd();
 console.log(favoriteRecipesSlice);
 
 export const { addRecipe, removeRecipe } = favoriteRecipesSlice.actions;
-export default favoriteRecipesSlice.reducer;
