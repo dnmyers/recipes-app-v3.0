@@ -38,7 +38,7 @@ export const selectFilteredAllRecipes = state => {
     );
 }
 
-// *** This code is for testing the selectors only.
+// This code is for testing the selectors only.
 // const testState = {
 //     allRecipes: allRecipesData,
 //     searchTerm: 'ch'
@@ -57,6 +57,6 @@ export const selectFilteredAllRecipes = state => {
 //     console.groupEnd();
 // }
 
-// *** Uncomment these to test each selector.
+// // Uncomment these to test each selector.
 // testSelectAllRecipes();
 // testSelectFilteredAllRecipes();
